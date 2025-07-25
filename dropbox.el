@@ -4,19 +4,27 @@
 
 ;; Author: lorniu <lorniu@gmail.com>
 ;; URL: https://github.com/lorniu/dropbox.el
-;; Package-Requires: ((emacs "27.1") (pdd "0.21"))
+;; Package-Requires: ((emacs "27.1") (pdd "0.2.2"))
 ;; Keywords: tools
 ;; SPDX-License-Identifier: MIT
-;; Version: 2.0.0
+;; Version: 2.0.1
 
 ;;; Commentary:
 
 ;; Dropbox Client for Emacs.
 ;;
-;; 1. Download `dropbox.el` and load it (with `load` or `require`)
-;; 2. The first time, you should generate the config file with `M-x dropbox-gen-config`
-;; 3. Then use `dropbox-find` to search and pick file,
-;;    Use `C-x C-f /db:` or `C-x C-f /db:/PATH-ON-DROPBOX` to open file
+;; 1. Download `dropbox.el' and load it. For example:
+;;
+;;    (use-package dropbox
+;;      :vc (:url "https://github.com/lorniu/dropbox.el")
+;;      :config
+;;      (setq dropbox-config-file "~/.dropbox")
+;;      (setq dropbox-http-backend (pdd-curl-backend)))
+;;
+;; 2. The first time, generate the config file with `M-x dropbox-gen-config`.
+;;
+;; 3. Then use `C-x C-f /db:' or `C-x C-f /db:/PATH-ON-DROPBOX' to open file,
+;;    and use command `dropbox-find' to search and pick file.
 ;;
 ;; Visit https://github.com/lorniu/dropbox.el for more information
 
