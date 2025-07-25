@@ -7,7 +7,7 @@
 ;; Package-Requires: ((emacs "27.1") (pdd "0.21"))
 ;; Keywords: tools
 ;; SPDX-License-Identifier: MIT
-;; Version: 2.0.0
+;; Version: 2.1.0
 
 ;;; Commentary:
 
@@ -46,6 +46,7 @@
   "Http backend used. See `pdd-backend' for details."
   :type 'sexp)
 
+;;;###autoload
 (defconst dropbox-prefix "/db:")
 
 (defvar dropbox--config nil)
