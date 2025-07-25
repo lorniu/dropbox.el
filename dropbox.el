@@ -46,6 +46,7 @@
   "Http backend used. See `pdd-backend' for details."
   :type 'sexp)
 
+;;;###autoload
 (defconst dropbox-prefix "/db:")
 
 (defvar dropbox--config nil)
